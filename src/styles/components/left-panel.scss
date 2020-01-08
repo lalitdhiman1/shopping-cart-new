@@ -1,0 +1,83 @@
+.container {
+	.leftPanel {
+		width: 220px;
+		padding: 40px;
+		display: flex;
+		flex-direction: column;
+		button {
+			width: 100px;
+			height: 40px;
+			margin: 0 auto;
+			background-color: #4269ea;
+			color: #fff;
+			line-height: 40px;
+			border-radius: 20px;
+			border: none;
+		}
+		button.cancel__button {
+			display: none;
+		}
+		button.apply__button.desktop {
+			margin-top: 20px;
+		}
+		button.apply__button.mobile {
+			border-right: none;
+			border-bottom: none;
+			display: none;
+		}
+	}
+}
+@media only screen and (max-width: 767px) {
+	.container {
+		.leftPanel {
+			padding: 0px;
+			position: fixed;
+			width: 75%;
+			display: block;
+			margin: auto;
+			top: 0;
+			bottom: 0;
+			height: 195px;
+			background-color: #fff;
+			left: 0;
+			right: 0;
+			z-index: 9999;
+			display: none;
+			h3 {
+				padding: 10px;
+			}
+			#rangeSliderDiv {
+				padding: 10px;
+			}
+			button {
+				width: 50%;
+				height: 40px;
+				margin: 20px auto 0;
+				background-color: transparent;
+				color: #555;
+				border: 1px solid #e2e2e2;
+				line-height: 40px;
+				border-radius: unset;
+			}
+			button.cancel__button {
+				border-left: none;
+				border-bottom: none;
+				display: inline;
+			}
+			button.apply__button.mobile {
+				border-right: none;
+				border-bottom: none;
+				display: inline;
+			}
+			button.apply__button.desktop {
+				border-right: none;
+				border-bottom: none;
+				display: none;
+			}
+		}
+	}
+	#rangeSliderDiv {
+    width: 90%;
+    margin: 0 auto;
+	}
+}

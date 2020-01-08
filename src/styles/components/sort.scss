@@ -1,0 +1,104 @@
+.sort_by {
+	display: flex;
+	align-items: center;
+	h2 {
+		margin: 20px 40px 20px 10px;
+	}
+	ul {
+		display: flex;
+		list-style: none;
+		align-items: center;
+	}
+	span {
+		margin-right: 20px;
+		text-decoration: none;
+		font-weight: bold;
+		color: #555;
+		font-size: 13px;
+	}
+	span.select {
+		color: #4269ea;
+		text-decoration: underline;
+	}
+}
+.mainMobileSort {
+	display: none;
+}
+.showMobilePanel {
+	display: none;
+}
+@media only screen and (max-width: 767px) {
+	.sort_by {
+		display: none;
+	}
+	.sort_by.mobile {
+		padding: 0px;
+		position: fixed;
+		width: 75%;
+		display: block;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		height: 215px;
+		background-color: #fff;
+		left: 0;
+		right: 0;
+		z-index: 9999;
+		display: none;
+		.sorting {
+			padding: 5px 10px;
+			input {
+				margin-right: 5px;
+			}
+			label {
+				font-size: 14px;
+			}
+		}
+		button {
+			width: 50%;
+			height: 40px;
+			margin: 20px auto 0;
+			background-color: transparent;
+			color: #555;
+			border: 1px solid #e2e2e2;
+			line-height: 40px;
+			border-radius: unset;
+		}
+		button.cancel__button {
+			border-left: none;
+			border-bottom: none;
+			display: inline;
+		}
+		
+	}
+	.showMobilePanel {
+		display: flex;
+		height: 40px;
+		align-items: center;
+		div.filter {
+			flex: 1;
+			padding: 5px 5px 5px 20px;
+			height: 30px;
+			border-left: 1px solid #ccc;
+			line-height: 30px;
+			border-bottom: 1px solid #ccc;
+			i {
+				font-size: 14px;
+				margin-right: 3px;
+			}
+		}
+		div.sort {
+			flex: 1;
+			padding: 5px 20px 5px 5px;
+			height: 30px;
+			line-height: 30px;
+			border-bottom: 1px solid #ccc;
+			text-align: right;
+			border-right: 1px solid #ccc;
+			i {
+				font-size: 18px;
+				margin-left: 3px;
+			}
+		}
+	}
+}

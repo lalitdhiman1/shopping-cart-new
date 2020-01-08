@@ -1,0 +1,144 @@
+.cart___leftpanel {
+	width: 70%;
+}
+.cart__item {
+	width: calc(100% - 42px);
+	background: #fff;
+	float: left;
+	margin: 10px;
+	border: 1px solid #555;
+	padding: 10px;
+	div {
+		float: left;
+	}
+	.cart__image {
+		float: left;
+		img {
+			height: 150px;
+		}
+	}
+}
+.cart__desc {
+	width: 28%;
+	padding: 10px;
+}
+.cart__control {
+	width: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 150px;
+	.cart-item {
+		width: 30px;
+		text-align: center;
+		border: 1px solid #555;
+		border-radius: 50%;
+		height: 30px;
+		line-height: 30px;
+	}
+}
+.cart-item-quantity {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+}
+.cart__action {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 150px;
+	width: 100px;
+}
+.cart___rightpanel {
+	margin: 10px;
+	height: 180px;
+	border: 1px solid #555;
+	background: #fff;
+	width: calc(30% - 22px);
+	.priceBox {
+		float: left;
+		width: 100%;
+		border-bottom: 1px solid #cccccc;
+	}
+	h2 {
+		font-size: 20px;
+		border-bottom: 1px solid #ccc;
+		padding: 10px;
+	}
+}
+.cartpageDiv {
+	float: left;
+	padding: 10px;
+	width: calc(100% - 20px);
+	.priceItems {
+		width: 63%;
+		float: left;
+	}
+	.columns {
+		width: 2%;
+		float: left;
+	}
+	.price {
+		width: 35%;
+		text-align: right;
+		float: left;
+	}
+}
+.totalPayable {
+	float: left;
+	padding: 10px;
+	width: calc(100% - 20px);
+	font-weight: bold;
+	.priceItems {
+		width: 63%;
+		float: left;
+	}
+	.columns {
+		width: 2%;
+		float: left;
+	}
+	.price {
+		width: 35%;
+		text-align: right;
+		float: left;
+	}
+}
+.container {
+	.cart__item {
+		.cart__desc {
+			.price {
+				padding-top: 35px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 767px) {
+	.cart___leftpanel {
+		width: 100%;
+		float: left;
+	}
+	.cart___rightpanel {
+		width: 100%;
+	}
+	.cart__desc {
+		width: calc(100% - 145px);
+		padding: 10px;
+	}
+	.cart__control {
+		width: calc(100% - 145px);
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		min-height: 0;
+		padding: 0 10px;
+	}
+	.cart__action {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		min-height: 0;
+		width: calc(100% - 145px);
+		padding: 10px 10px;
+	}
+}
